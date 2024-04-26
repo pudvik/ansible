@@ -4,7 +4,7 @@
   #   WISHES: "morning from play variables"
   # vars_files:
   # - vars.yaml
-  # vars_prompt
+  # vars_prompt:
   # - name: WISHES
   #   prompt: enter wishes
   #   private: false
