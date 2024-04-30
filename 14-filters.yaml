@@ -40,4 +40,4 @@
   tasks:
   - name: print min amd amx
     ansible.builtin.debug:
-      msg: "{{number | min }}, {{nimber | max }}"
+      msg: "{{number | min }}, {{number | max }}"
