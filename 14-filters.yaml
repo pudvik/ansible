@@ -41,3 +41,18 @@
   - name: print min amd amx
     ansible.builtin.debug:
       msg: "{{number | min }}, {{number | max }}"
+
+- name: convert dict to items
+  hosts: localhost
+  vars:
+    my_dict:
+      Course: Ansible
+      Trainer: Siva
+      Duration: 120hr
+  tasks:
+  - name: Before convert
+    ansible.builtin.debug:
+      msg: "before conver {{my_dict}}"
+  - name: after convert
+    ansible.builtin.debug:
+      msg: "after convert {{my_dict | dict2items }}"
